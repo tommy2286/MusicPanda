@@ -1,4 +1,4 @@
-import json
+import os
 import logging
 import discord.ext.commands as commands
 
@@ -10,9 +10,6 @@ handler.setFormatter(logging.Formatter('{asctime}:{levelname}:{name}:{message}',
 rlog.addHandler(handler)
 
 # Get the token
-with open('conf.json') as fp:
-    conf = json.load(fp)
-
 # Complicated bot creation
 bot = commands.Bot(commands.when_mentioned_or'!', description='Never say no to Panda.')
 bot.load_extension('music')
