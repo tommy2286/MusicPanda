@@ -1,1 +1,1 @@
-worker: python Panda.py
+worker: python panda.py
