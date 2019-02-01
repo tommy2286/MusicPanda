@@ -11,7 +11,7 @@ rlog.addHandler(handler)
 
 # Get the token
 # Complicated bot creation
-bot = commands.Bot(commands.when_mentioned_or'!', description='Never say no to Panda.')
+bot = commands.Bot(command_prefix="!", description='Never say no to Panda.')
 bot.load_extension('music')
 
 # For when the bot is shitting itself
